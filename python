@@ -1,0 +1,28 @@
+python
+print("Для закрытия программы введите 0 в качестве знака операции")
+
+while True:
+    z = input("Знак (+,-,*,/):")
+    if z == "0": break
+    if z in ("+","-","*","/"):
+
+       x= int(input("Введите первое число:"))
+       y= int(input("Введите второе число:"))
+    
+       if z == "+":
+          print(x + y)
+       elif z == "-":
+          print(x - y)
+       elif z == "*":   
+          print(x * y)
+       elif z == "/":
+           if y != 0:
+              print(x / y)
+           else:
+               print("Деление на ноль!")
+    else:
+        print("Неверный знак операции")
+
+
+
+        
