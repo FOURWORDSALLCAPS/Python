@@ -1,2 +1,15 @@
+t = int(input("Введите температуру:"))
+print("Выберите перевод")
+print("1-Из шкалы Фаренгейта в Цельсии,2 наоборот!")
+x= int(input("Вводить сюда 1 или 2:"))
 
+if x == 1:
+  i=(t -32) * (5/9)
+  print (i)
+elif x == 2:
+  i=(t * (9/5)) + 32
+  print(i)
+else:
+  print("Ошибка данных")
 
+input("Please use Enter to close the program!")
